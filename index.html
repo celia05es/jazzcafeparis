@@ -1,0 +1,751 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenización de Jazz, Música brasileña, música francesa, etc. - Página web del grupo de jazz Cafe Paris </title>
+    <meta name="description" content="Café Paris  - Grupo de Jazz Madrid - Amenización - Descrubra los mejores servicios de amenización de jazz de Madrid." >
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Papyrus', sans-serif;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pos_title {
+            text-align: center;
+        }
+
+        #top-left {
+            margin-top: 20px;
+        }
+
+        #top-left a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #top-left a:hover {
+            text-decoration: underline;
+        }
+
+        #bottomRightLink {
+            right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .white_content {
+          display: none;
+          position: absolute;
+          top: 5%;
+          left: 25%;
+          width: 50%;
+          height: 60%;
+          padding: 16px;
+          border: 16px solid #97694F;
+          background-color: #C0C0C0;
+          z-index:1002;
+          overflow: auto;
+       }
+
+      .white_content2 {
+        display: none;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        height: 30%;
+        padding: 16px;
+        border: 16px solid #97694F;
+        background-color: #C0C0C0;
+        z-index:1002;
+        overflow: auto;
+      }
+
+      .white_content3 {
+           display: none;
+           position: absolute;
+           top: 5%;
+           left: 5%;
+           width: 80%;
+           height: 75%;
+           padding: 16px;
+           border: 16px solid #97694F;
+          background-color: #C0C0C0;
+          z-index:1002;
+          overflow: auto;
+       }
+
+       .white_content4 {
+            display: none;
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            width: 90%;
+            height: 40%;
+            padding: 16px;
+            border: 16px solid #97694F;
+            background-color: #C0C0C0;
+            z-index: 1002;
+            overflow: auto;
+       }
+
+      .white_content5 {
+         display: none;
+         position: absolute;
+         top: 15%;
+         left: 25%;
+         width: 50%;
+         height: 40%;
+         padding: 16px;
+         border: 16px solid #97694F;
+         background-color: #C0C0C0;
+         z-index:1002;
+         overflow: auto;
+     }
+
+     .right {
+            text-align: right;
+     }
+
+      #top-right {
+            position: fixed;
+            top: 50px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        #bio {
+            display: none;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 80%;
+            height: 75%;
+            padding: 16px;
+            border: 16px solid #97694F;
+            background-color: #C0C0C0;
+            z-index: 1002;
+            overflow: auto;
+       }
+
+       #bioTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #bioTable th, #bioTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            border: none; /* Remove table border */
+        }
+
+        #bioTable th {
+            background-color: #f2f2f2;
+        }
+
+        #bioLink {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 150px; /* Adjust the top position as needed */
+            left: 30px;
+        }
+
+        #rep {
+            display: none;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 80%;
+            height: 75%;
+            padding: 16px;
+            border: 16px solid #97694F;
+            background-color: #C0C0C0;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+         #repTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #repTable th, #repTable td {
+            padding: 8px;
+            text-align: left;
+            font-family: 'Arial', sans-serif;
+            border: none; /* Remove table border */
+        }
+
+        #repTable th {
+            background-color: #f2f2f2;
+        }
+
+        #repLink {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 150px; /* Adjust the top position as needed */
+            left: 140px;
+        }
+
+        #videos {
+            display: none;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 80%;
+            height: 75%;
+            padding: 16px;
+            border: 16px solid #97694F;
+            background-color: #C0C0C0;
+            z-index: 1002;
+            overflow: auto;
+       }
+
+       #videosTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #videosTable th, #vidTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #videosTable th {
+            background-color: #f2f2f2;
+        }
+
+        #videosLink {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 150px; /* Adjust the top position as needed */
+            left: 260px;
+        }
+
+       #photosTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #vphotosTable th, #vidTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #photosTable th {
+            background-color: #f2f2f2;
+        }
+
+        #photosLink {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 150px; /* Adjust the top position as needed */
+            left: 350px;
+        }
+
+       #offersTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #offersTable th, #vidTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #offersTable th {
+            background-color: #f2f2f2;
+        }
+
+        #offersLink {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 150px; /* Adjust the top position as needed */
+            left: 430px;
+        }
+
+         #contactLink {
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 150px; /* Adjust the top position as needed */
+            left: 610px;
+        }
+
+        #audioPlayer {
+        width: 100%;
+        max-width: 300px;
+        margin-right: -105px;
+        margin-top: 20px
+       }
+
+       #songSelector {
+        width: 100%;
+        max-width: 120px;
+        margin-top: 10px
+       }
+          
+       /* Style for the Visit Counter */
+        #visitCounter {
+            color: white;
+            position: absolute;
+            bottom: 100px; /* Adjust the bottom position as needed */
+            right:30px; /* Adjust the right position as needed */
+      
+       }
+
+       #guestBook a {
+        color: white;
+        text-decoration: none;
+      }
+
+      #comment {
+        font-family: Arial;
+        font-size: 15px;
+      }
+
+      #photos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        /* .photo:hover {
+            transform: scale(1.1);
+        } */
+
+        
+
+    </style>
+
+ <!-- Add your JavaScript functions here -->
+ <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        });
+
+     function show(elementId) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                element.style.display = 'block';
+            }
+        }
+
+        function hide(elementId) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                element.style.display = 'none';
+            }
+        }
+
+       function openRep() 
+       { 
+            window.open("Repertorio_CP.pdf","Repertoire","fullscreen=no,toolbar=yes, width=800, height=600, menubar=yes, status=no,scroll=yes"); 
+        }
+
+      function updateVisitCounter() {
+            // Get the current visit count from local storage
+            let visitCount = localStorage.getItem('visitCount') || 0;
+
+            // Increment the visit count
+            visitCount++;
+
+            // Update the local storage and display the count
+            localStorage.setItem('visitCount', visitCount);
+              document.getElementById('visitLabel').innerText = 'Visitantes:';
+             document.getElementById('visitCounter').innerText = visitCount;
+        }
+
+       function playSelectedSong() {
+        // Get the selected value from the dropdown
+        var selectedSong = document.getElementById("songSelector").value;
+
+        // Update the audio source
+        document.getElementById("audioPlayer").src = selectedSong;
+
+        // Play the audio
+        document.getElementById("audioPlayer").play();
+
+        }
+
+       function openGuestBook() {
+        // Specify the width and height for the new window
+        const width = 500;
+        const height = 700;
+
+        // Calculate the position based on the current window size
+        const left = (window.innerWidth - width) / 2;
+        const top = (window.innerHeight - height) / 2;
+
+        // Open the guest book link in a new window
+        window.open("http://jcafeparis.123Guestbook.com/", "GuestBookWindow", `width=${width}, height=${height}, top=${top}, left=${left}`);
+   
+        }
+
+         function openEnlargedPhoto(photoPath) {
+           // Specify the desired width and height for the new window
+        const width = 800;
+        const height = 600;
+
+        // Calculate the left and top values to center the window on the screen
+        const left = (window.innerWidth - width) / 2;
+        const top = (window.innerHeight - height) / 2;
+
+        // Open the HTML file in a new window without scrollbars
+        const newWindow = window.open(`enlarged_photo.html?photo=${encodeURIComponent(photoPath)}`, 'EnlargedPhoto', `width=${width},height=${height},left=${left},top=${top},resizable=no,scrollbars=no`);
+    }
+          
+    </script>
+
+</head>
+<body bgcolor="black" onload="hide('loading');show('part1');show('part2');show('fp'); updateVisitCounter();">
+
+<!-- TÍTULO  -->
+<div class="container">
+       <p class="pos_title">
+           <span style="font-size: 50px; font-family: 'Curlz MT'; font-weight: bold; color: white;">CAFE&nbsp;&nbsp;PARIS<br></span>
+           <span style="font-size: 20px; font-family: 'Arial'; font-weight: bold; color: white;"> "Bienvenido al café de los amantes del jazz...</span>
+       </p>
+
+       <!-- LINKS -->
+       <div style="margin-top: 10px; margin-bottom: 20px;">
+           <a href="#" onclick="hide('fp');show('bio');show('fadeBio')" id="bioLink" title="Biografía del grupo de jazz de Madrid Café Paris">Biografía | </a>
+  
+           <a href="#" onclick="hide('fp');show('rep');show('fadeRep')" id="repLink" title="Repertorio del grupo de jazz de Madrid, Café Paris">Repertorio | </a>
+          
+           <a href="#" onclick="hide('fp');show('videos');show('fadeVideos')" id="videosLink" title="Videos del grupo de jazz de Madrid, Café Paris">Videos | </a>
+  
+          <a href="#" onclick = "hide('fp');show('photos_act');show('fadePhotos')" id="photosLink"  title="Photos del grupo de jazz de Madrid Café Paris" >Fotos | </a>
+
+         <a href="#" onclick = "hide('fp');show('offers');show('fadeOffers')" id="offersLink"  title=Lo que ofrece el grupo de jazz de Madrid Café Paris >¿Qué ofrecemos? | </a>
+
+         <a href="#" onclick = "hide('fp');show('contact');show('fadeContact')" id="contactLink" title="Como contactar con el grupo de jazz de Madrid Café Paris">Contactos</a>
+
+       </div>
+
+      <!-- Three Columns Layout -->
+      <div style="display: flex; align-items: center; margin-top: 60px;">
+        <!-- Left Column for Image -->
+        <div style="margin-top: 10px; margin-left: 40px;">
+            <img src="fotos_grupo_jazz/cafeParis.jpg" width="350" height="250" alt="Amenización de jazz - Grupo Cafe Paris">
+        </div>
+        <!-- Center Column for Text -->
+        <div style="margin-left: 20px;">
+           <table style="width: 100%; color: white; font-size: 16px; font-family: 'Arial';">
+            <tr>
+               <td style="max-width: 400px;">
+                  Café Paris es un grupo multinacional que se instala
+                  ahora en Madrid para trasladarnos a la atmósfera
+                bohemia y alocada del mejor París de las boites de jazz
+                tras la guerra.
+                <p>
+               El Jazz de Ella Fitzgerald, Sarah Vaughan, Duke
+                Ellington y tantos otros, se mezcla con las canciones
+                más desgarradas de Edith Piaf y las más sensuales
+                de la música brasileña de Carlos Jobim para crear un 
+                mbiente único: el ambiente de la noche y del amor.
+               </td>
+               <td style="width: 50px;"></td>
+             </tr>
+             
+           </table>
+        </div>
+
+      <!-- Right Column for Music Player -->
+         <div style="margin-left: auto; margin-right: 30px;">
+            
+
+          <select id="songSelector" onchange="playSelectedSong()" style="width: 200px;">
+             <option value="themes/Summertime.mp3">Summertime</option>
+             <option value="themes/PielCanela.mp3">Piel Canela </option>
+             <option value="themes/Saint_Thomas_Instrumental.mp3">Saint Thomas - instrumental</option>
+             <option value="themes/summertime_instrumental.mp3">Summertime - instrumental</option>
+               <option value="themes/Route66.mp3">Route 66</option>
+               <option value="themes/LaVieEnRose.mp3">La vie en rose</option>
+                <option value="themes/Sunshine.mp3">Ain't no sunshine</option>
+               <option value="themes/Mercadona_Giggle.mp3">Giggle Mercadona</option>
+              <!-- Add more options for additional songs -->
+           </select>
+
+          <audio controls id="audioPlayer">
+               <source src="themes/Summertime.mp3" type="audio/mp3"> <!-- Set the first song as the default -->
+               Your browser does not support the audio element.
+            </audio>
+       </div>
+   </div>
+
+<!-- GUESTBOOK LINK -->
+<div id="guestBook" style="position:fixed; top: 540px; right:20px" >  
+    <a href="#" onclick="openGuestBook()" style="font-size: 18px; font-family: 'Papyrus'; text-decoration: none; color: white;">Ver comentarios / Dejar un comentario</a>
+</div> 
+
+</div>
+
+<!-- BIOGRAFÍA LINK -->
+ <div id="bio" class="white_content3">   
+      <p class="right"><a href = "#" onclick = "hide('bio');hide('fadeBio');show('fp')">Cerrar ventana</a></p>
+      <table  id="bioTable" style="width: 100%; color: black; font-size: 20px; font-family: 'Arial';">
+      <tr>
+        <td style="width: 25%;" font-family':Arial';">
+          <img src="fotos_grupo_jazz/Elisa Bach.jpg" width="190" height="150" alt="Vocalista del grupo de jazz de Madrid Café Paris">
+        </td>
+        <td style="width: 75%;">
+           <b>Elisa Bach</b> se formó en el conservatorio de Marignane (Marsella) y comenzó su actividad en los clubes de Grenoble.<br>Empieza su trayectoria musical, hace casi quince años, como vocalista en diferentes grupos de jazz de Francia (en Marsella, Aix-en-Provence, Grenoble, Toulouse, Albi, etc.). Allí, durante unos años, ademàs de jazz, formó un grupo de pop-rock que hacía tributos a los años 60, 80 y 90... pero volvía siempre a su gran amor... el jazz.
+         <p> Presta su voz al jigle de Mercadona desde 2008.</p>
+          <p>Ahora mismo es también unas de las vocalistas de la Big Band de Alcalá de Henares. </p>
+        <td>
+       </tr>
+       <tr>
+         <td colspan="2" style="width: 25%;" font-family':Arial';">
+          Tomó clases en Madrid con la profesora de canto y soprano lírica 'Paloma Serrano Rovira'
+          <br> Dío clases en Villalba con la cantante y pianista Eglis Pauli Danger ya fallecida. 
+         </td>
+      </tr>
+      <tr>
+        <td style="width: 25%;" font-family':Arial';">
+          <img src="fotos_grupo_jazz/Javier García.jpg" width="190" height="150" alt="Pianista del grupo de jazz de Madrid Café Paris">
+        </td>
+        <td style="width: 75%;">
+           <b>Javier García </b> - Pianista del grupo. Pianista madrileño con formación de piano clásico cuyo estilo  fue tomando matices del jazz, blues, son y bossa nova entre otros. 
+        <td>
+       </tr>
+       <tr>
+         <td colspan="2" style="width: 25%;" font-family':Arial';">
+            <p></p>
+         </td>
+      </tr> 
+      <tr>
+        <td style="width: 25%;" font-family':Arial';">
+          <img src="fotos_grupo_jazz/Yrvis Mendez.jpg" width="190" height="150" alt="Bajista del grupo de jazz de Madrid Café Paris">
+        </td>
+         <td style="width: 75%;">
+           <b>Yrvis Mendez</b> - Bajista del grupo - Bajista, compositor, arreglista y productor de los más variados generos musicales. 
+        <td>
+       </tr>
+       <tr>
+         <td colspan="2" style="width: 25%;" font-family':Arial';">
+            <p></p>
+         </td>
+      </tr> 
+      <tr>
+        <td style="width: 25%;" font-family':Arial';">
+          <img src="fotos_grupo_jazz/Daniel Rouleau.jpeg" width="190" height="150" alt="Saxofonista del grupo de jazz de Madrid Café Paris">
+        </td>
+         <td style="width: 75%;">
+           <b>Daniel Rouleau</b> - Saxofonista del grupo. <p>Instrumentos: flauta, clarinete, saxos barítono, tenor, alto y soprano.<br>Inicia sus estudios musicales a los 17 años con el maestro Cruz Arráiz. Posteriormente, estudia teoría y solfeo, música de cámara, flauta, jazz y arreglo en la Escuela de Música José Reyna (Caracas). En 1997 graba disco con el conocido grupo venezolano “La Banana Voladora”. Participa en la grabación de “Reversible por Ambos Lados”, de la legendaria agrupación venezolana Aditus. A mediados del 2001 funda junto a otros músicos el grupo de jazz fusión “Metrópolis”, donde toca los saxos soprano, alto y tenor
+        <td>
+       </tr>
+       <tr>
+         <td colspan="2" style="width: 25%;" font-family':Arial';">
+            Desde finales 2009 reside en Madrid, donde ha grabado con el grupo de funk “The Cool Ones” en su disco “Gettin’ Cool” y colaborado con los artistas Nino Segarra, Cano Estremera, Henry Fiol, Elvin Vivencias, Issac Delgado, Los Adolescent’s, Jaime Vásquez y su Calle Mora, Nelson Arrieta y Jorge Luis Chacín, la Orquesta del Solar,  Carlos Tález, el violinista David Moreira y las cantantes TJ y Marta Llenas, entre otros.<p></p>
+         </td>
+      </tr> 
+      <tr>
+        <td style="width: 25%;" font-family':Arial';">
+          <img src="fotos_grupo_jazz/Enric Castelló Arándiga.jpg" width="120" height="190" alt="Batera del grupo de jazz de Madrid Café Paris">
+        </td>
+         <td style="width: 75%;">
+           <b>Enric Castillo</b> - Batera del grupo. <br> Inicia sus estudios musicales a la edad de 12 años de percusión para dedicarse por completo a la batería a la edad de 15 años. 
+Ha estudiado de batería con los profesores José Soler Galvis, Felip Santandreu, Jorge Lucero, Jeff Jerolomon, Yayo Morales, Marcos Parra, Iván Díaz, Juanma Barroso, Marc Miralta. Etc.<br>
+
+Tiene una experiencia de más de 15 años en diversos centros educativos y escuelas municipales de música. En la actualidad es profesor de las escuelas municipales Isaac Albeniz de Madrid, Nicolás Salmerón de Madrid, Federico Chueca Madrid y la EMMD de San Sebastián de los Reyes. 
+Es autor del libro didáctico de batería “RHYTHM CONSTRUCTOR” dedicado al estudio de los compases irregulares.<p></p>
+
+        <td>
+       </tr>
+       <tr>
+         <td colspan="2" style="width: 25%;" font-family':Arial';">
+            <p>Desde sus inicios profesionales ha formado parte y grabado en multitud de proyectos destacando entre otros: Neus Ferri, Karina, L´Rollin clarinete band, Mártin Sanchez, Jaime Elorrieta,  la orquesta Alcatraz, Felix Santos, David Montes, Santiago Montoro, All4gospel, Copa Ilustrada big band, Harmonia big band, etc.
+Ha formado parte del elenco de percusionistas de TERRA MÏTICA y de los musicales Cabaret, Priscila reina del desierto, Maribel y la extraña familia, Mil y un sueños, etc.
+
+            <br>
+           En el primer trimestre del año 2000 decide fijar su residencia en España, </p>
+         </td>
+      </tr> 
+      </table>
+            <!-- Add additional content as needed -->
+    </div>
+
+<!-- REPERTORIO LINK -->
+       <div id="rep" class="white_content4">  
+           <p class="right"><a href="#" onclick="hide('rep');hide('fadeRep');show('fp')">Cerrar ventana</a></p>
+           <table id="repTable">
+               <tr>
+                   <td>
+                       Repertorio del grupo de Jazz Café Paris
+                   </td>
+              </tr>
+              <tr>
+                   <td>
+                     <p>El grupo de jazz Caf&eacute; Paris, tiene un repertorio para todos los gustos... incluye los standards de jazz, boleros, música romántica, bossa nova, temas brasileños, canciones francesas, música de película, temas para amenización, etc.<p></p>
+      Durante la Navidad, toca villancicos...pero eso sí....siempre con un toque de jazz! 
+                   </td>
+               </tr>
+           </table>
+
+            <a href = "#" onclick = "openRep()"><b>Descargar repertorio</b></a></p>
+
+           <!-- Add additional content as needed -->
+            <a href="#" id="bottomRightLink" onclick="hide('rep');hide('fadeRep');show('fp')" style="position: absolute; bottom: 10px; right: 10px;">Cerrar ventana</a>
+       </div>
+
+<!-- VIDEOS LINK -->
+
+       <div id="videos" class="white_content">
+        <p class="right"><a href="#" onclick="hide('videos');hide('fadeVideos');show('fp')">Cerrar ventana</a></p>
+        <table id="videosTable">
+            <tr>
+              <td><a href="#" onClick="javascript:window.open('https://youtu.be/zUn9Lt2hF8s?si=ePN-mOx9bwC-SZu0','Evento_PianoMeetups','height=630,width=530,top=0,left=0,resizable=no,scrollbars=yes');">Evento PianoMeetups - 2023</a></td>      
+            </tr>
+             <tr>
+              <td><a href="#" onClick="javascript:window.open('https://youtu.be/qmSjZqs_IoA?si=w5zn_Q95oAt47pXv','Derroche_Directo','height=630,width=530,top=0,left=0,resizable=no,scrollbars=yes');">Directo - Derroche - 2023</a></td>      
+            </tr>
+            <tr>
+                <td><a href="#" onClick="javascript:window.open('http://www.youtube.com/watch?v=sR9BKjrBHXE','Concierto_quinteto','height=630,width=530,top=0,left=0,resizable=no,scrollbars=yes');">Concierto en quinteto</a></td>
+                <!-- Add more rows for additional videos -->
+            </tr>
+          <tr>
+      <td><a href="#" onClick="javascript:window.open('https://www.youtube.com/watch?v=0Iy9ZObi6kQ','Dream a little dream of me','height=630,width=530,top=0,left=0,resizable=no,scrollbars=yes');">Dream a little dream of me (Instrumental) </a></td> 
+      </tr>
+      <tr>
+        </table>
+        <a href="#" id="bottomRightLink" onclick="hide('videos');hide('fadeVideos');show('fp')" style="position: absolute; bottom: 10px; right: 10px;">Cerrar ventana</a>
+    </div>
+
+<!-- PHOTOS  LINK -->
+
+     <div id="photos_act" class="white_content3">
+       <p class="right"><a href="#" onclick="hide('photos_act');hide('fadePhotos');show('fp')">Cerrar ventana</a></p>
+           <p>Algunas fotos....</p>
+            <table id="photosTable">
+             <tr>
+               <td class="photo" onclick="openEnlargedPhoto('photos/Claustros de Ayllón - Segovia.jpg')">
+                  <img src="photos/Claustros de Ayllón - Segovia.jpg" width="210" height="170" alt="Amenización Jazz - Claustros de Ayllón - Segovia" > 
+                   <div id="comment"> Boda en Claustros de Ayllón</div>
+                    <div id="comment">Segovia</div>
+            </td>
+              </td>
+                <td class="photo" onclick="openEnlargedPhoto('photos/Urb. Fuente del Fresno.jpg')">
+                  <img src="photos/Urb. Fuente del Fresno.jpg" width="230" height="170" alt="Amenización jazz - Urb. Fuente del Fresno - Madrid " > 
+                 <div id="comment">Urb. Fuente del Fresno - Madrid</div> 
+              </td>
+              <td class="photo" onclick="openEnlargedPhoto('photos/Cumpleaños -  Villaviciosa de Odón.jpg')">
+                 <img src="photos/Cumpleaños -  Villaviciosa de Odón.jpg" width="230" height="170" alt="Amenizacion jazz - Cumpleaños Villavicioa de Odon" > 
+                <div id="comment"> Cumpleaños Villavicioa de Odón </div>
+             </td>
+            </tr>
+            <tr>
+                 <td class="photo" onclick="openEnlargedPhoto('photos/Amenizacion_Boda_civil.jpg')">
+                  <img src="photos/Amenizacion_Boda_civil.jpg" width="210" height="170" alt="Amenizacion Boda civil" >
+                   <div id="comment">Amenización boda civil</div>
+               </td>
+               <td class="photo" onclick="openEnlargedPhoto('photos/Amenización -Evento Huawai.jpg')">
+                 <img src="photos/Amenización -Evento Huawai.jpg" width="230"" height="170" alt="Amenización jazz - Evento Huawai" >  
+                 <div id="comment">Evento Huawai</div>
+               </td>
+               <td class="photo" onclick="openEnlargedPhoto('photos/Ceremonia religiosa y Cóctel - Requijada - Segovia.jpg')">
+                 <img src="photos/Ceremonia religiosa y Cóctel - Requijada - Segovia.jpg" width="210" height="170" alt="Ceremonia religiosa y Amenización jazz - Cóctel - Requijada - Segovia" > 
+                     <div id="comment">Ceremonia religiosa y Cóctel</div>
+                     <div id="comment">Requijada - Segovia </div> <div id="comment"> </div>
+                </td>
+            </tr>
+            <tr>
+              <td class="photo" onclick="openEnlargedPhoto('photos/Television_InterEconomia_Más Se Perdio En Cuba.jpg')">
+                <img src="photos/Television_InterEconomia_Más Se Perdio En Cuba.jpg" width="190" height="200" alt="Jazz - Television InterEconomia Mas Se Perdio En Cuba" >
+                   <div id="comment">InterEconomía </div>
+                   <div id="comment">Más Se Perdio en Cuba </div>
+             </td>
+             <td class="photo" onclick="openEnlargedPhoto('photos/Amenización jazz -  Torre Espacio - Madrid.jpg')">
+                 <img src="photos/Amenización jazz -  Torre Espacio - Madrid.jpg" width="230" height="170" alt="Amenización jazz Torre Espacio - Madrid" > 
+                 <div id="comment">Amenización jazz Torre Espacio</div>
+             </td>
+               <td class="photo" onclick="openEnlargedPhoto('photos/Cóctel de Boda_finca Etxemendi_Colmenar Viejo.jpg')">
+                    <img src="photos/Cóctel de Boda_finca Etxemendi_Colmenar Viejo.jpg" width="230" height="170" alt="Amenización jazz - Boda en finca Etxemendi - Colmenar Viejo" > 
+                     <div id="comment">Boda en finca Etxemendi </div>
+                     <div id="comment"> Colmenar Viejo </div>
+                </td>
+           </tr>
+           <tr>
+              <td class="photo" onclick="openEnlargedPhoto('photos/Amenización Boda Finca Las-Jarillas-Colmenar Viejo.jpg')">
+                <img src="photos/Amenización Boda Finca Las-Jarillas-Colmenar Viejo.jpg" width="230" height="170" alt="Amenización jazz - Boda Finca Las Jarillas - Colmenar Viejo." > 
+                <div id="comment"> Boda Finca Las Jarillas</div>
+                <div id="comment">Colmenar Viejo </div>
+            </td>
+           <td class="photo" onclick="openEnlargedPhoto('photos/Amenización Boda oro - Madrid.jpg')">
+              <img src="photos/Amenización Boda oro - Madrid.jpg" width="230" height="170" alt="Amenización jazz, música brasileña, música pop, música francesa, boleros - Boda de oro - Madrid" > 
+              <div id="comment"> Boda de oro - Madrid</div> 
+          </td>
+          <td class="photo" onclick="openEnlargedPhoto('photos/Amenización Hote  Ritz - Madrid.jpg')">
+             <img src="photos/Amenización Hote  Ritz - Madrid.jpg" width="230" height="170" alt="Amenización jazz - Hotel Ritz  Madrid" > 
+               <div id="comment"> Amenización Hotel Ritz  Madrid </div>
+          </td>
+         </tr>
+       </table>
+    </div>
+
+<!-- QUE OFRECEMOS LINK -->
+       <div id="offers" class="white_content4">
+        <p class="right"><a href="#" onclick="hide('offers');hide('fadeOffers');show('fp')">Cerrar ventana</a></p>
+        <table id="offersTable">
+            <tr>
+                <td>
+               <ul>
+              <li>
+              Amenización <b>para sus fiestas,</b> reuniones sociales y de empresas, cócteles, cumpleaños, bodas, bautizos, ceremonias civiles o religiosas (iglesia, sinagoga), etc. 
+	  donde necesite un toque de clase y distinción;</li>
+              <li>Amenización en locales. Si tiene un bar, un local, un hotel, un restaurante y busca crear un ambiente diférente, Café Paris es el grupo que necesita.</li>
+                </ul>
+                <!-- Add more rows for additional videos -->
+            </tr>
+        </table>
+
+    </div><!-- CONTACT  LINK -->
+   <div id="contact" class="white_content2">   
+        <p class="right"><a href="#" onclick="hide('contact');hide('fadeContact');show('fp')">Cerrar ventana</a></p>
+         Si desea contactar con Café Paris, por favor envíe un mensaje a: <b><a href="mailto:jazzcafeparis@gmail.com">jazzcafeparis@gmail.com</a></b> o llame al: <br>
+        <b>609.173.370</b> <br>
+     </div>
+
+<!-- Visit Counter -->
+      
+      <span id="visitLabel" style="color: white; position: absolute; bottom: 70px; right: 150px;">Visits:</span>
+      <span id="visitCounter" style="color: white; position: absolute; bottom: 70px; right: 30px;">0</span>
+
+</div>
+  
+    
+</body>
+</html>
+
+ 

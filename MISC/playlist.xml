@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<track>
+		<path>themes/ItDontMeanAThing.mp3</path>
+		<title>It don't mean a thing</title>
+	</track>
+	<track>
+      	<path>themes/Mercadona_Giggle.mp3</path>
+		<title>La canción de Mercadona...</title>
+	</track>
+	<track>
+            <path>themes/PielCanela.mp3</path>
+	       <title>Piel Canela </title>
+	</track>
+	<track>
+            <path>themes/Smooth_operator.mp3</path>
+	       <title>Smooth operator</title>
+	</track>
+        <track>
+		<path>themes/LaVieEnRose.mp3</path>
+		<title>La vie en rose</title>
+	</track>
+	<track>
+            <path>themes/LullabyOfBirdland.mp3</path>
+	       <title>Lullaby of Birdland </title>
+	</track><track>
+            <path>themes/Jewish_pop_pourri.mp3</path>
+	       <title>Pop pourri de musica judia </title>
+	</track>
+        <track>
+		<path>themes/Round_midnight.mp3</path>
+		<title>Round midnight</title>
+	</track>
+        <track>
+		<path>themes/LoveLoveLove.mp3</path>
+		<title>All you need is love</title>
+
+      </track>
+      <track>
+		<path>themes/Route66.mp3</path>
+		<title>Route 66</title>
+	</track>
+         <track>
+		<path>themes/Softly.mp3</path>
+		<title>Softly</title>
+	</track>
+      <track>
+		<path>themes/UnHommeUneFemme.mp3</path>
+		<title>Un homme, une femme</title>
+	</track>
+      <track>
+		<path>themes/Summertime.mp3</path>
+		<title>Summertime</title>
+	</track>
+	<track>
+		<path>themes/PolkaDotsMoonBeams.mp3</path>
+		<title>Polka, dots and moonbeams</title>
+	</track>
+      <track>
+            <path>themes/MellowTone.mp3</path>
+		<title>In a mellow tone</title>
+	</track>
+	<track>
+		<path>themes/Yesterdays.mp3</path>
+		<title>Yesterdays</title>
+	</track>
+</xml>
