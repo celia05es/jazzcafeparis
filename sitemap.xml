@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
 <url>
 	<loc>http://www.jazzcafeparis.es/</loc>
-	<priority>0.5</priority>
-	<changefreq>daily</changefreq>
+	<priority>1</priority>
+	<changefreq>monthly</changefreq>
+	<lastmod>2008-12-27T01:01:00+00:00</lastmod>
+</url>
+<url>
+	<loc>http://www.jazzcafeparis.es/themes/laVieEnRose.mp3</loc>
+	<priority>0.2</priority>
+	<changefreq>never</changefreq>
 	<lastmod>2008-12-27T01:01:00+00:00</lastmod>
 </url>
 </urlset>
